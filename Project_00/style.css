@@ -1,0 +1,101 @@
+/* General page styling */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.5;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  gap: 16px;
+  padding: 12px 16px;
+  background-color: lightblue;
+}
+
+.nav-link {
+  color: white;              /* requirement: set color of <a> tags */
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* requirement: :hover pseudoclass */
+.nav-link:hover {
+  text-decoration: underline;
+}
+
+/* Layout */
+.site-header {
+  padding: 16px;
+}
+
+.card {                      /* class selector #1 */
+  margin: 16px;
+  padding: 16px;
+  border: 2px solid #ddd;
+  border-radius: 10px;
+}
+
+/* id selector requirement */
+#featured {
+  border-color: #999;
+}
+
+/* class selector #2 */
+.highlight {
+  background-color: #ffe680;
+  padding: 2px 6px;
+  border-radius: 6px;
+}
+
+/* List styling (your “pink list”) */
+.pink-list li {
+  background-color: pink;
+  margin-bottom: 8px;       /* creates spacing between list items */
+  padding: 8px;
+  list-style-position: inside;
+}
+
+/* Images */
+.main-image {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin-top: 10px;
+}
+
+/* Table */
+.my-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.my-table th,
+.my-table td {
+  border: 1px solid #444;
+  padding: 8px;
+}
+
+/* Footer */
+.site-footer {
+  padding: 16px;
+  text-align: center;
+  border-top: 1px solid #ddd;
+}
+
+/* requirement: @media rule for small screens */
+@media (max-width: 600px) {
+  .navbar {
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .card {
+    margin: 10px;
+  }
+}
+
+
+
+
